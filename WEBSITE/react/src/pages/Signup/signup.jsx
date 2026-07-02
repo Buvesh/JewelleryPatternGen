@@ -16,7 +16,7 @@ export const Signup = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-  };
+  };' r4'
 
   const handleSubmit = async (e) => {
     e.preventDefault();

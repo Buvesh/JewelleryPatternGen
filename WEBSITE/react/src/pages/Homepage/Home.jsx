@@ -14,10 +14,17 @@ import "../../components/Home/Faq.css";
 import "../../components/Home/Ps.css";
 import Footer from "../../components/Global/Footer";
 import Comparision from "../../components/Home/Comparision";
+import "./Home.css";
 
 export const Home = () => {
     return (
-        <div>
+        <div className='Home-page'>
+            <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-rbH6ABoXKBlL9XUxJsv4kVoKclN1aVDfsz5zjV2bYd2FPpEdIbb6bJnyq26hAHE6"
+  crossorigin="anonymous"
+></script>
+
             <Brandheader />
             <HeroSection />
             <ProblemSolutionSection 
@@ -25,13 +32,13 @@ export const Home = () => {
                 description="Luminaire is your gateway to transforming jewelry sketches into stunning 2D designs. With cutting-edge AI technology, we turn your creative ideas into precise, vibrant visualizations. Whether you're a designer, jeweler, or enthusiast, Luminaire simplifies the design process, adding precision and elegance to your vision.
 
 Let your imagination shine with Luminaire – where innovation meets artistry."
-                videoSrc="/videos/radiancevideo.webm"
+                videoSrc=""
             />
                         <Comparision />
             <Benefits />
             <FAQSection />
 
-            <Footer />
+            <Footer /> 
         </div>
     );
 };

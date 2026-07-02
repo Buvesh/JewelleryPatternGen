@@ -14,7 +14,7 @@ export const Navbar = () => {
             // Parse cookies to find the JWT
             const cookies = document.cookie.split("; ");
             const jwtCookie = cookies.find((cookie) =>
-                cookie.trim().startsWith("jwt=")
+                cookie.trim().startsWith("jwt=")    
             );
 
             if (jwtCookie) {
@@ -24,7 +24,7 @@ export const Navbar = () => {
                     // Decode the JWT payload (2nd part of the token)
                     const base64Url = token.split(".")[1]; // Get payload
                     const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
-                    const jsonPayload = JSON.parse(atob(base64)); // Decode Base64
+                    const jsonPayload = JSON.parse(atob(base64)); // Decode Base64  
 
                     setUsername(jsonPayload.username); // Set username from payload
                     setLoggedin(true); // Mark as logged in

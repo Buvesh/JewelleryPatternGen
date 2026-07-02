@@ -8,7 +8,7 @@ import ContactUs from "./pages/ContactUs/contactus";
 import Upload from "./pages/Upload/upload";
 import Login from "./pages/Login/login";
 import Signup from "./pages/Signup/signup";
-import AboutUs from "./pages/AboutUs/Aboutus";
+import AboutUs from "./pages/AboutUs/aboutus";
 import Homepage from "./pages/Homepage/Home";
 import Forgotps from './pages/Forgotps/Forgot';
 import History  from "./pages/History/History";
